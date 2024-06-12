@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Stage - Presentation</title>
+    <link href="style/style.css" rel="stylesheet" >
+    <link href="style/presentation.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+              <li class="menu-deroulant">
+                <a href="#">Services</a>
+                <ul class="sous-menu">
+                  <li><a href="#">Cloud</a></li>
+                  <li><a href="#">Web & App</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </li>
+              <li class="menu-deroulant">
+                <a href="#">Réalisations</a>
+                <ul class="sous-menu">
+                  <li><a href="#">Orange</a></li>
+                  <li><a href="#">Orange Bussiness</a></li>
+                  </ul>
+                  <ul>
+                <div class="search-container">
+                   <input type="text" id="search-bar" placeholder="Search...">
+                    <button onclick="search()" class="button-search">Search</button>
+                </div>
+                <script src="scripts/scriptes.js"></script>
+            </ul>
+          </nav>
+    </header>
+    <main class="a-propos-main">
+        <section>
+            <h1>Présentation (eleve)</h1>
+            <div class="carre-contenu">
+                <p>
+                    je me présente...
+                </p>
+                <h2>Apprentissage</h2>
+                <p>Durant les deux premières semaines, j'ai du commencer l'apprentissage des trois langages ci dessous.</p>
+                <ul>
+                    <li><a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" class="html" style="color: black;">HTML </a>et <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" class="css" style="color: black;">CSS</a></li>
+                    <li><a href="https://fr.wikipedia.org/wiki/JavaScript" class="js" style="color: black;">Javascript</a></li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h1>Présentation (entreprise)</h1>
+            <div class="carre-contenu">
+                <p>
+                    Orange, entreprise de ..., situé à ..., a pour but de...
+                </p>
+                <h2>Missions</h2>
+                <p>Objectifs d'oranges et autres.</p>
+                <ul>
+                    <li class="localisation">Plan de localisation : </li>
+                    <li class="actent">Activités de l'entreprise : </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h1>Taches à réaliser</h1>
+            <div class="carre-contenu">
+                <p>
+                    Lors des deux premières semaines,
+                    <br> 
+                    j'ai été assigner comme tâches à apprendre (a retirer pour l'oral)
+                    
+                    les différents langages de programmation nécessaire pour pouvoir aider mon collègue
+                    developper :
+                    <br> 
+                    <li>Loic.</li>
+                    <br>
+                    Il m'a donner comme instructions d'apprendre, les trois princpaux langages de programmation
+                    nécessaires pour pouvoir travailler avec lui sur les projets d'oranges.
+                </p>
+                <p style="color: yellow; background-color: orangered;" >demander autorisation avant partage d'informations</p>
+                <p>Suite aux deux premières semaines, j'ai alors été affecté à un projet <br>{($PROJET | NAME$)}. On m'a expliqué les différentes tâches à réaliser dedans{($PROJET | DESC$)}</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer>
+    <div class="social-media">
+        <div class="button">
+            <div class="icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></div>
+            <span>Facebook</span>
+        </div>
+
+        <div class="button">
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <span>Twitter</span>
+        </div>
+
+        <div class="button">
+            <div class="icon"><i class="fab fa-instagram"></i></div>
+            <span>Instagram</span>
+        </div>
+
+        <div class="button">
+            <div class="icon"><i class="fab fa-github"></i></div>
+            <span>Github</span>
+        </div>
+
+        <div class="button">
+            <div class="icon"><i class="fab fa-youtube"></i></div>
+            <span>Youtube</span>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+
+<script src="scripts/app.js"></script>
+
+</html>
