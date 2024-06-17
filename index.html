@@ -2,170 +2,76 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/orangebluff.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super menu de navigation</title>
-    <link rel="stylesheet" href="style/style.css">
-    <!-- Lien vers les icones réseaux sociaux -->   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"> 
+    <title>Entrée</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #title {
+            color: #fff;
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            cursor: pointer;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+
+        #title:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-              <li class="menu-deroulant">
-                <a href="#">Services</a>
-                <ul class="sous-menu">
-                  <li><a href="#">Cloud</a></li>
-                  <li><a href="#">Web & App</a></li>
-                  <li><a href="#">Marketing</a></li>
-                </ul>
-              </li>
-              <li class="menu-deroulant">
-                <a href="#">Réalisations</a>
-                <ul class="sous-menu">
-                  <li><a href="jeu.html">Jeu</a></li>
-                  <li><a href="#">Orange Bussiness</a></li>
-                  </ul>
-                  <ul>
-                <div class="search-container">
-                   <input type="text" id="search-bar" placeholder="Search...">
-                    <button onclick="search()" class="button-search">Search</button>
-                </div>
-                <script src="scripts/scriptes.js"></script>
-            </ul>
-          </nav>
-    </header>
-    
-    <section class="section-one">
-        <div class="home">
-            Welcome to Orange APP ! 
-            <p>
-                All those who thirst for escape,
-                <span>
-                    Besoin de savoir votre CO2 ?
-                </span>
-            </p>
-        </div>
+    <video id="background-video" autoplay muted loop>
+        <source src="backgroundvideo.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <h1 id="title">Bienvenue sur le Rapport de stage</h1>
 
-        <button class="btn-visit">
-            <a href="https://www.orange-business.com/fr">Visitez notre site officiel</a></button>
-    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const title = document.getElementById('title');
 
-    <section class="section-two">
-        <p>
+            title.addEventListener('click', () => {
+                title.classList.add('slide-out');
+            });
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
+            setTimeout(() => {
+                title.style.opacity = 1;
+            }, 2000); // Fait apparaitre le titre après X secondes.
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
-
-        </p>
-
-        <br>
-
-        <p>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
-
-        </p>
-
-        <br>
-
-        <p>
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
-
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
-            
-        </p>
-
-        <br>
+            title.addEventListener('click', function() {
+                window.location.href = 'load-screen.html';
+            });
+        });
         
-        <p>
-            
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-             eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
+    </script>
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
 
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Tempore reiciendis ducimus nam. 
-            Odit quo magnam ex, laboriosam excepturi atque repellat laborum perferendis.
-            eius aliquam reiciendis, voluptate quidem neque quae. 
-            Perferendis.
-
-        </p>
-    </section>
-
-    <footer>
-        <div class="social-media">
-            <div class="button">
-                <div class="icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></div>
-                <span>Facebook</span>
-            </div>
-
-            <div class="button">
-                <div class="icon"><i class="fab fa-twitter"></i></div>
-                <span>Twitter</span>
-            </div>
-
-            <div class="button">
-                <div class="icon"><i class="fab fa-instagram"></i></div>
-                <span>Instagram</span>
-            </div>
-
-            <div class="button">
-                <div class="icon"><i class="fab fa-github"></i></div>
-                <span>Github</span>
-            </div>
-
-            <div class="button">
-                <div class="icon"><i class="fab fa-youtube"></i></div>
-                <span>Youtube</span>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-
-    <script src="scripts/app.js"></script>
 </body>
 </html>
