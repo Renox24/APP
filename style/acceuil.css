@@ -18,7 +18,7 @@ header nav {
   height: 75px;
   color: #f4f4f4;
   border-bottom: 1px solid black;
-  z-index: 7;
+  z-index: 2;
 }
 
 header nav .list-menu {
@@ -46,7 +46,7 @@ header nav .list-menu .item {
   font-family: 'couriel';
   font-size: 25px;
   font-weight: 500;
-  z-index: 6;
+  z-index: -1;
 }
 
 .section-one .home span{
@@ -67,7 +67,7 @@ header nav .list-menu .item {
   font-family: 'couriel';
   font-size: 24px;
   font-weight: 300;
-  z-index: 6;
+  z-index: 0;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
