@@ -1,89 +1,32 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Apprentissage - HTML & CSS</title>
-        <meta name="contact">
-        <link href="style/style.css" rel="stylesheet" >
-        <link href="style/contact.css" rel="stylesheet" >
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"> 
-        <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                  <li class="menu-deroulant">
-                    <a href="#">Services</a>
-                    <ul class="sous-menu">
-                      <li><a href="#">Cloud</a></li>
-                      <li><a href="#">Web & App</a></li>
-                      <li><a href="#">Marketing</a></li>
-                    </ul>
-                  </li>
-                  <li class="menu-deroulant">
-                    <a href="#">Réalisations</a>
-                    <ul class="sous-menu">
-                      <li><a href="#">Orange</a></li>
-                      <li><a href="#">Orange Bussiness</a></li>
-                      </ul>
-                      <ul>
-                </ul>
-              </nav>
-        </header>
-    <section id="contact" class="section-contact">
-        <h2>Parlons de votre proposition</h2>
-        <form method="get" action="#">
-            <div class="form-nom-email">
-                <div class="form-column">
-                    <label for="nom">Nom</label>
-                    <input type="text" name="nom" id="nom" placeholder="Ex. Pascal Lefèvre" id="choose" name="i_like" style="border-color: black;" required >
-                </div>
-                <div class="form-column">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email"placeholder="Ex. lefevrepascal@gmail.com" id="choose" name="i_like"style="border-color: black;" required>
-                </div>
-            </div>
-            <label for="message">Message</label>
-            <textarea name="message" id="message" rows="10" placeholder="Ex. Je propose..." id="choose" name="i_like" style="border-color: black;" required ></textarea>
-            <a href="mailto:emarque769@gmail.com" class="mail">Envoyer par mail</a></p>
-    </section>
-    </body>
-<footer>
-  <div class="social-media">
-      <div class="button">
-          <div class="icon"><i class="fab fa-facebook-f" aria-hidden="true"></i></div>
-          <span>Facebook</span>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="boutton">
+            <a href="acceuil.html">
+                <p>X</p>
+            </a>
+        </div>
+        <h1>Contactez-nous</h1>
+        <form id="contact-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Ex. Pascal Lefèbre" required>
 
-      <div class="button">
-          <div class="icon"><i class="fab fa-twitter"></i></div>
-          <span>Twitter</span>
-      </div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Ex. nom.prenom@gmail.com" required>
 
-      <div class="button">
-          <div class="icon"><i class="fab fa-instagram"></i></div>
-          <span>Instagram</span>
-      </div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" placeholder="Ex. Je souhaite parler de..." required></textarea>
 
-      <div class="button">
-          <div class="icon"><i class="fab fa-youtube"></i></div>
-          <span>Youtube</span>
-      </div>
-  </div>
-  <div class="blume"></div>
-      <div class="findivblumeref">
-      <a class="blumeref" href="#">Données personelles</a>
-      <a class="blumeref" href="#">Orange</a>
-      <a class="blumeref" href="#">Contactez-nous</a>
-  </div>
-</div>
-</footer>
-
-<!-- Scripts -->
-
-<script src="javascript/nav.js"></script>
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+    <script src="javascript/contact.js"></script>
+</body>
 </html>
