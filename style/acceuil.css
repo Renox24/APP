@@ -46,7 +46,7 @@ header nav .list-menu .item {
   font-family: 'couriel';
   font-size: 25px;
   font-weight: 500;
-  z-index: -1;
+  z-index: 6;
 }
 
 .section-one .home span{
