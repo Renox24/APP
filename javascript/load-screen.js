@@ -65,6 +65,10 @@ const draw = () => {
     const point2 = createPoint(rotation + 50, positionFromCenter)
     const point3 = createPoint(rotation + 75, positionFromCenter)
     const point4 = createPoint(rotation + 25, positionFromCenter)
+    const point5 = createPoint(rotation + 12.5, positionFromCenter)
+    const point6 = createPoint(rotation + 62.5, positionFromCenter)
+    const point7 = createPoint(rotation + 87.5, positionFromCenter)
+    const point8 = createPoint(rotation + 37.5, positionFromCenter) 
     
     /* Clear canvas and redraw */
     ctx.fillStyle = 'rgba(0, 0, 0, 0.5)'
@@ -74,6 +78,10 @@ const draw = () => {
     drawCircle(tick, point2)
     drawCircle(tick, point3)
     drawCircle(tick, point4)
+    drawCircle(tick, point5)
+    drawCircle(tick, point6)
+    drawCircle(tick, point7)
+    drawCircle(tick, point8) 
     
     /* Add animated white text in a square pattern */
     const squareSize = 100; // Size of the square
@@ -129,5 +137,5 @@ draw()
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         window.location.href = 'acceuil.html';
-    }, 5000); // Wait for 5 seconds
+    }, 10000); // Attend 10 secondes
 });
