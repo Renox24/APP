@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', function() {
     // Optionally, check time every minute
     setInterval(checkTimeAndRedirect, 60000);
 });
+
