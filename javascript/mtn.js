@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const now = new Date();
         const hours = now.getHours();
 
-        if (hours >= 13 && hours < 16) {
+        if (hours >= 14 && hours < 16) {
             window.location.href = 'acceuil.html';
         } else {
             mainContent.style.opacity = 1;
