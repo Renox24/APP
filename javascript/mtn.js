@@ -1,10 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const container = document.querySelector('.maintenance-container');
-    container.style.opacity = 1;
-    container.style.transform = 'translateY(0)';
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     const mainContent = document.getElementById('main-content');
 
     // Function to check the time and redirect if necessary
