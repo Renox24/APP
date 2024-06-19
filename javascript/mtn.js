@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const hours = now.getHours();
 
         if (hours >= 14 && hours < 16) {
-            window.location.href = '../acceuil.html';
+            window.location.href = 'load-screen.html';
         } else {
             mainContent.style.opacity = 1;
             mainContent.style.transform = 'translateY(0)';
