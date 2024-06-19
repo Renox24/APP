@@ -128,6 +128,6 @@ draw()
 
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
-        window.location.href = 'acceuil.html';
+        window.location.href = '../acceuil.html';
     }, 5000); // Wait for 5 seconds
 });
