@@ -4,7 +4,7 @@ html, body {
   }
   
   .container {
-    min-height: calc(100vh - 470px); /* 60px représente la hauteur du footer, ajustez-la selon votre mise en page */
+    min-height: calc(100vh - 650px); /* 60px représente la hauteur du footer, ajustez-la selon votre mise en page */
     padding-bottom: 40px; /* Espace pour le footer */
   }
   
